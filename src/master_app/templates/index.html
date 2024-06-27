@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="nav_img">
+            <img src="{{ url_for('static', filename='sabudh_foundation_logo.jpg') }}" alt="Foundation Image">
+        </div>
+        <ul class="nav__links">
+            <li><a href="http://127.0.0.1:8086">About</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="header">
+            <img src="{{ url_for('static', filename='sabudh_foundation_logo.jpg') }}" alt="Foundation Image" class="foundation-image">
+            <h1>Welcome to Intelligent Document Processing</h1>
+        </div>
+
+        <ul class="app-links">
+            <li id="summarization">
+                <h2>Intern: Ali Haider Khan and Aditya Thite</h2>
+                <a href="http://127.0.0.1:8083">Summarization App</a>
+            </li>
+            <li id="table-extraction">
+                <h2>Intern: Krishnendu Biswas</h2>
+                <a href="http://127.0.0.1:8080">Table Extraction App</a>
+            </li>
+            <li id="ner">
+                <h2>Intern: Ishleen Kaur</h2>
+                <a href="http://127.0.0.1:8081">NER App</a>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 06-2024 IDP. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

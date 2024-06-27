@@ -1,0 +1,17 @@
+from PIL import Image, ImageDraw, ImageFont
+
+# Create a blank image with white background
+image = Image.new('RGBA', (64, 64), 'white')
+draw = ImageDraw.Draw(image)
+
+# Optionally, add some text or design
+# For simplicity, I'll add the letter "M" for "Master App"
+try:
+    font = ImageFont.truetype("arial", 40)
+except IOError:
+    font = ImageFont.load_default()
+
+draw.text((12, 10), "M", font=font, fill='black')
+
+# Save as favicon.ico
+image.save("static/favicon.ico")

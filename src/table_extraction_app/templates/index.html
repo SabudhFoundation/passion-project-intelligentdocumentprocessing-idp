@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Extractor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="black-background">
+    <div class="container">
+        <h1 class="header-text">Table Extractor</h1>
+        <div class="upload-container">
+            <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
+                <label for="file-upload" class="custom-file-upload">
+                    <i class="fa fa-cloud-upload"></i> Choose PDF File
+                </label>
+                <input id="file-upload" type="file" name="file" accept=".pdf" required>
+                <button type="submit" class="upload-button">Upload</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

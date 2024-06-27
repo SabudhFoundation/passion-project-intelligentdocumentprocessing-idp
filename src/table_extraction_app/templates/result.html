@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracted Tables</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_result.css') }}">
+</head>
+<body class="black-background">
+    <div class="container">
+        <h1 class="header-text">Uploaded PDF and Extracted Tables</h1>
+        
+        <!-- Left side: Display the uploaded PDF using an iframe -->
+        <div class="pdf-viewer">
+            <iframe src="{{ url_for('static', filename='uploads/' + pdf_filename) }}" width="100%" height="600px"></iframe>
+        </div>
+        
+        <!-- Right side: Display the cropped images -->
+        <div class="cropped-images">
+            {% for table in tables %}
+                <div class="cropped-image-container">
+                    <img src="{{ url_for('static', filename='cropped_images/' + table) }}" alt="Cropped Image {{ loop.index }}" class="zoomable">
+                    <a href="{{ url_for('static', filename='cropped_images/' + table) }}" download="cropped_image{{ loop.index }}.png" class="download-button">Download</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <!-- Modal for displaying zoomed images -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    
+    <!-- JavaScript dependencies -->
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/panzoom/9.4.0/panzoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <script src="{{ url_for('static', filename='script_result.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,666 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8086
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:37:36] "GET / HTTP/1.1" 200 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 713, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore # noqa: B950
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\scaffold.py", line 331, in send_static_file
+    return send_from_directory(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\helpers.py", line 590, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\utils.py", line 587, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:37:37] "[35m[1mGET /about_app/static/aboutstyle.css HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:37:37] "[35m[1mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\Master Project\about_app\about.py", line 16, in favicon
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\helpers.py", line 590, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\utils.py", line 587, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:37:37] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8086
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:39:33] "GET / HTTP/1.1" 200 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:39:33] "[35m[1mGET /about_app/static/aboutstyle.css HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:39:33] "GET /static/sabudh_foundation_logo.jpg HTTP/1.1" 200 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\Master Project\about_app\about.py", line 16, in favicon
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\helpers.py", line 590, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\utils.py", line 587, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:39:33] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8086
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:42:36] "GET / HTTP/1.1" 200 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:42:36] "[35m[1mGET /about_app/static/aboutstyle.css HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:42:36] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\Master Project\about_app\about.py", line 16, in favicon
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\helpers.py", line 590, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\utils.py", line 587, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:42:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8086
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:53:47] "GET / HTTP/1.1" 200 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:53:47] "[35m[1mGET /about_app/static/aboutstyle.css HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:53:47] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\Master Project\about_app\about.py", line 16, in favicon
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\helpers.py", line 590, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\utils.py", line 587, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 15:53:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8086
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:02:13] "GET / HTTP/1.1" 200 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:02:14] "[35m[1mGET /about_app/static/aboutstyle.css HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:02:14] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\Master Project\about_app\about.py", line 16, in favicon
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\helpers.py", line 590, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\utils.py", line 587, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:02:14] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8086
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:04:20] "GET / HTTP/1.1" 200 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:04:21] "[35m[1mGET /about_app/static/aboutstyle.css HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:04:21] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\Master Project\about_app\about.py", line 16, in favicon
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\helpers.py", line 590, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\utils.py", line 587, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:04:21] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8086
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:05:43] "GET / HTTP/1.1" 200 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:05:44] "[35m[1mGET /about_app/static/aboutstyle.css HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:05:44] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\Master Project\about_app\about.py", line 16, in favicon
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\helpers.py", line 590, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\utils.py", line 587, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:05:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:05:56] "[35m[1mGET /dummy HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\Master Project\about_app\about.py", line 16, in favicon
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\helpers.py", line 590, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\utils.py", line 587, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:05:56] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\flask\\globals.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\collocations.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\switchboard.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\dependency.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\nombank.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\ipipan.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\dummy_sentencepiece_objects.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\pl196x.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\dummy_tokenizers_objects.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\knbc.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\dummy_tensorflow_text_objects.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\chasen.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\dummy_keras_nlp_objects.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\dummy_vision_objects.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\childes.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\aligned.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\dummy_pt_objects.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\lin.py', reloading
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\semcor.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\framenet.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\framenet.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\udhr.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\sentiwordnet.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\sentiwordnet.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\dummy_tf_objects.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\dummy_tf_objects.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\twitter.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\twitter.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\nkjp.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\nkjp.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\dummy_essentia_and_librosa_and_pretty_midi_and_scipy_and_torch_objects.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\dummy_torchaudio_objects.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\dummy_torchaudio_objects.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\crubadan.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\dummy_flax_objects.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\mte.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\mte.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\models\\bart\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\models\\bart\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\reviews.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\opinion_lexicon.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\models\\bart\\modeling_bart.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\pros_cons.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\categorized_sents.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\comparative_sents.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\panlex_lite.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\panlex_swadesh.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\bcp47.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\reader\\bcp47.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\corpus\\util.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\string.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\string.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\re\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\heapq.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\models\\bart\\tokenization_bart.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\tokenization_utils.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\tokenization_utils_base.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\torch\\functional.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\torch\\nn\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\torch\\nn\\modules\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\packaging\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\packaging\\version.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\torch\\nn\\modules\\module.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\generation\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\generation\\utils.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\integrations\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\integrations\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\integrations\\peft.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\integrations\\peft.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\downloader.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\downloader.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\data.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\data.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\configuration_utils.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\integrations\\deepspeed.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\generation\\configuration_utils.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\generic.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\torch\\utils\\_pytree.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\torch\\nn\\init.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\torch\\_tensor.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\quantizers\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\quantizers\\auto.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\utils\\quantization_config.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\quantizers\\quantizer_awq.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\quantizers\\base.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\quantizers\\quantizer_bnb_4bit.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\quantizers\\quantizer_bnb_8bit.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\quantizers\\quantizer_gptq.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\quantizers\\quantizer_aqlm.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\quantizers\\quantizer_quanto.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\quantizers\\quantizer_eetq.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\quantizers\\quantizer_hqq.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\modeling_tf_pytorch_utils.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\modeling_tf_utils.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\modeling_flax_pytorch_utils.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\safetensors\\flax.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\compat.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\sem\\logic.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\internals.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\sem\\evaluate.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\sem\\evaluate.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\tokenize\\destructive.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\tokenize\\destructive.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\tokenize\\api.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\tokenize\\simple.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\nltk\\tokenize\\simple.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\torch\\autograd\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\torch\\autograd\\grad_mode.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\torch\\utils\\_contextlib.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\generation\\logits_process.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\generation\\stopping_criteria.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\transformers\\generation\\streamers.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\_pytest\\cacheprovider.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\_pytest\\cacheprovider.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\site-packages\\_pytest\\fixtures.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\logging\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\anaconda3\\Lib\\logging\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug: * Debugger PIN: 683-450-398
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\Desktop\\Master Project\\about_app\\about.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\Desktop\\Master Project\\about_app\\about.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\Desktop\\Master Project\\about_app\\about.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\User\\Desktop\\Master Project\\about_app\\about.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8086
+ * Running on http://192.168.0.105:8086
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:08:36] "GET / HTTP/1.1" 200 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:08:36] "[35m[1mGET /about_app/static/aboutstyle.css HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:08:36] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\Master Project\about_app\about.py", line 16, in favicon
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\helpers.py", line 590, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\utils.py", line 587, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:08:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8086
+ * Running on http://192.168.0.105:8086
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:10:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:10:56] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:10:56] "[35m[1mGET /about_app/static/aboutstyle.css HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:10:56] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:13:21] "GET / HTTP/1.1" 200 -
+ERROR:root:An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\anaconda3\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:13:22] "[35m[1mGET /about_app/static/aboutstyle.css HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:13:22] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:13:22] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8086
+ * Running on http://192.168.0.105:8086
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8086
+ * Running on http://192.168.0.105:8086
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8086
+ * Running on http://192.168.0.105:8086
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:18:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:18:35] "GET /static/aboutstyle.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:18:35] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 16:18:35] "GET /static/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 17:01:53] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 17:01:53] "[36mGET /static/aboutstyle.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 17:01:53] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 17:01:54] "[36mGET /static/aboutstyle.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 17:01:54] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 17:01:54] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 17:01:54] "[36mGET /static/aboutstyle.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 17:01:54] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 17:01:54] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 17:02:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 17:02:03] "[36mGET /static/aboutstyle.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 17:02:03] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2024 17:02:03] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8086
+ * Running on http://192.168.0.105:8086
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:18:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:18:24] "[36mGET /static/aboutstyle.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:18:24] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:18:24] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:26:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:26:54] "[36mGET /static/aboutstyle.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:26:54] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:26:54] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:31:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:31:30] "[36mGET /static/aboutstyle.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:31:30] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:31:30] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:36:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:36:13] "[36mGET /static/aboutstyle.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:36:13] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:36:13] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:48:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:48:03] "[36mGET /static/aboutstyle.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:48:03] "[36mGET /static/sabudh_foundation_logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Jun/2024 11:48:03] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
